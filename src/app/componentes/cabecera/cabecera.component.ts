@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CabeceraComponent  implements OnInit {
 
+  sidenavWidth: number = 200;
+
   constructor() { }
 
   ngOnInit() {}
