@@ -1,19 +1,22 @@
 <mat-toolbar color="primary" class="mat-elevation-z6">
-  <button (click)="drawer.toggle()" mat-icon-button>
+  <button (click)="sidenav.toggle()" mat-icon-button>
     <mat-icon>menu</mat-icon>
   </button>
   <span>RegistrAPP</span>
   <span class="espacio-toolbar"></span>
-<button mat-raised-button color="warn" routerLink="/inicio-sesion" routerLinkActive="active-link" >Cerrar Sesion</button>
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav [fixedInViewport]="true" #drawer opened="false" mode="push">
+  <mat-sidenav [fixedInViewport]="true" #sidenav [opened]="false" mode="push">
+    <button (click)="sidenav.toggle()" mat-icon-button><mat-icon>close</mat-icon></button>
     <mat-nav-list>
       <mat-list-item>
         <button mat-button><mat-icon>account_circle</mat-icon>Perfil</button>
       </mat-list-item>
     </mat-nav-list>
+    <div class="flex-container">
+      <button mat-raised-button color="warn" routerLink="/inicio-sesion" (click)="sidenav.close()"  >Cerrar Sesion</button>
+    </div>
   </mat-sidenav>
   <mat-sidenav-content>
     <div [ngStyle]="{ 'margin-left.em': sidenavWidth - 4 }">

@@ -1,3 +1,17 @@
 .espacio-toolbar{
     flex: 1 1 auto;
 }
+
+.mat-sidenav{
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 350px;
+    padding: 16px;
+}
