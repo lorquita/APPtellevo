@@ -7,17 +7,17 @@
 <button mat-raised-button color="warn" routerLink="/inicio-sesion" routerLinkActive="active-link" >Cerrar Sesion</button>
 </mat-toolbar>
 
-<mat-drawer-container>
-  <mat-drawer #drawer opened="false" mode="push">
+<mat-sidenav-container>
+  <mat-sidenav [fixedInViewport]="true" #drawer opened="false" mode="push">
     <mat-nav-list>
       <mat-list-item>
         <button mat-button><mat-icon>account_circle</mat-icon>Perfil</button>
       </mat-list-item>
     </mat-nav-list>
-  </mat-drawer>
-  <mat-drawer-content>
-    <div style="text-align: center; min-height: 600px;">
-      <ion-router-outlet></ion-router-outlet>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div [ngStyle]="{ 'margin-left.em': sidenavWidth - 4 }">
+      <router-outlet></router-outlet>
     </div>
-  </mat-drawer-content>
-</mat-drawer-container>
+  </mat-sidenav-content>
+</mat-sidenav-container>
