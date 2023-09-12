@@ -23,6 +23,22 @@ const routes: Routes = [
     path: 'recuperar-contra',
     loadChildren: () => import('./pages/recuperar-contra/recuperar-contra.module').then( m => m.RecuperarContraPageModule)
   },
+  {
+    path: 'reg-asist',
+    loadChildren: () => import('./pages/reg-asist/reg-asist.module').then( m => m.RegAsistPageModule)
+  },
+  {
+    path: 'ver-horario',
+    loadChildren: () => import('./pages/ver-horario/ver-horario.module').then( m => m.VerHorarioPageModule)
+  },
+  {
+    path: 'ver-asistencia',
+    loadChildren: () => import('./pages/ver-asistencia/ver-asistencia.module').then( m => m.VerAsistenciaPageModule)
+  },
+  {
+    path: 'confirmar-asistencia',
+    loadChildren: () => import('./pages/confirmar-asistencia/confirmar-asistencia.module').then( m => m.ConfirmarAsistenciaPageModule)
+  },
 ];
 
 @NgModule({
