@@ -9,6 +9,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 import {MatBadgeModule} from '@angular/material/badge';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatIconModule,
     MatToolbarModule,
     MatListModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ]
 })
 export class ModuleModule { }
