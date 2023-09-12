@@ -3,9 +3,16 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="fondo">
-<!--
-  <app-ver-horario *ngFor="let VerHorario of horarios"
-  imagen="{{VerHorario.imagen}}"
-  titulo="{{VerHorario.titulo}}"></app-ver-horario>  
--->
+  <div style="background-color: rgb(231, 235, 37); text-align: center; margin: 50px;">
+    <ion-button fill="clear" (click)="irReg()">Registrar Asistencia</ion-button>
+  </div>
+  <div style="background-color: rgb(231, 235, 37); text-align: center; margin: 50px;">
+    <ion-button fill="clear" (click)="irVerAsistencia()">Ver Asistencia</ion-button>
+  </div>
+  <div style="background-color: rgb(231, 235, 37); text-align: center; margin: 50px;">
+    <ion-button fill="clear" (click)="irVerHorario()">Ver Horario</ion-button>
+  </div>
 </ion-content>
+<ion-footer>
+  <app-pie></app-pie>
+</ion-footer>

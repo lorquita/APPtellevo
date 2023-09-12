@@ -1,0 +1,31 @@
+<ion-header>
+  <app-cabecera></app-cabecera>
+</ion-header>
+<ion-content [fullscreen]="true" class="fondo">
+  <div class="titulo">
+    Programación Movil
+  </div>
+  <div class="subtitulo">
+    Seccion: PGY-4121_004D<br>
+    Profesor: Freddy Campos
+  </div>
+  <div class="imagen">
+    <img src="../../../assets/img/Profe.jpg" alt="">
+  </div>
+  <div class="alumno">
+    Alumno: Juan Paillan<br>
+    Rut: xx.xxx.xxx-x
+  </div>
+  <div class="boton">
+    <ion-button id="alerta" (click)="irHome()">Confirmar Asistencia</ion-button>
+      <ion-alert
+      trigger="alerta"
+      header="Asistencia Confirmada"
+      message="Usted a quedado Presente"
+      [buttons]="alertButtons"
+    ></ion-alert>
+  </div>
+</ion-content>
+<ion-footer>
+  <app-pie></app-pie>
+</ion-footer>

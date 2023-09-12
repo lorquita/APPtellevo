@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { VerHorario } from 'src/app/interfaces/ver-horario';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +8,18 @@ import { VerHorario } from 'src/app/interfaces/ver-horario';
 })
 export class HomePage implements OnInit{
 
-  constructor() {}
+  constructor(private router:Router) {}
   
   ngOnInit() {
   }
-  horarios: VerHorario[]=[
-    {imagen: '../../../assets/img/horario.jpg', titulo:"Horario"},
-  ]
+
+  irReg(){
+    this.router.navigate(['/reg-asist'])
+  }
+  irVerHorario(){
+    this.router.navigate(['/ver-horario'])
+  }
+  irVerAsistencia(){
+    this.router.navigate(['/ver-asistencia'])
+  }
 }
