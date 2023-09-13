@@ -20,7 +20,7 @@ export class InicioSesionPage implements OnInit {
 
   async irHome() {
     if (this.usuario=="admin" && this.password=="1234") {
-      this.router.navigate(['/home']);
+      this.router.navigate(['/menu-profe']);
   }else if(this.usuario=='Juan' && this.password=='4321'){
     this.router.navigate(['/home']);
   }

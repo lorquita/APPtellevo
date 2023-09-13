@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MenuProfePageRoutingModule } from './menu-profe-routing.module';
+import { ListaClasesProfesorPageRoutingModule } from './lista-clases-profesor-routing.module';
 
-import { MenuProfePage } from './menu-profe.page';
+import { ListaClasesProfesorPage } from './lista-clases-profesor.page';
 import { ModuleModule } from 'src/app/modulos/module/module.module';
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
 
@@ -15,10 +15,10 @@ import { ComponentesModule } from 'src/app/componentes/componentes.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    MenuProfePageRoutingModule,
+    ListaClasesProfesorPageRoutingModule,
     ModuleModule,
     ComponentesModule
   ],
-  declarations: [MenuProfePage]
+  declarations: [ListaClasesProfesorPage]
 })
-export class MenuProfePageModule {}
+export class ListaClasesProfesorPageModule {}
