@@ -46,6 +46,10 @@ const routes: Routes = [
     path: 'lista-clases-profesor',
     loadChildren: () => import('./pages/lista-clases-profesor/lista-clases-profesor.module').then( m => m.ListaClasesProfesorPageModule)
   },
+  {
+    path: 'lista-alumnos',
+    loadChildren: () => import('./pages/lista-alumnos/lista-alumnos.module').then( m => m.ListaAlumnosPageModule)
+  },
 
 
 ];
