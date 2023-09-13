@@ -13,6 +13,8 @@ const ELEMENT_DATA: ListadoClases[] = [
   {Id: 3, asignatura: 'Algoritmos', seccion: '021D', sala: 'TR-21'},
   {Id: 4, asignatura: 'Consulta BD', seccion: '0923D', sala: 'EEEEEEE-2'},
   {Id: 5, asignatura: 'Principios de Fe Cristiana', seccion: 'D10S', sala: 'PA-523'},
+  {Id: 6, asignatura: 'Ingles', seccion: '010D', sala: 'LSD-020'},
+  {Id: 7, asignatura: 'Portafolio', seccion: '003D', sala: 'CR-7'},
 ];
 
 
@@ -23,7 +25,7 @@ const ELEMENT_DATA: ListadoClases[] = [
 })
 export class TablaClasesComponent  implements OnInit {
 
-  displayedColumns: string[] = ['Id', 'asignatura', 'seccion', 'sala'];
+  displayedColumns: string[] = ['Id', 'asignatura', 'seccion', 'sala', 'iniciar-clase'];
   dataSource = ELEMENT_DATA;
 
   constructor() { }
