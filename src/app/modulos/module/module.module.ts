@@ -30,7 +30,7 @@ import {MatSortModule} from '@angular/material/sort';
     MatBadgeModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
   ]
 })
 export class ModuleModule { }

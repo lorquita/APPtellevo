@@ -42,7 +42,11 @@ const routes: Routes = [
   {
     path: 'menu-profe',
     loadChildren: () => import('./pages/menu-profe/menu-profe.module').then( m => m.MenuProfePageModule)
+  },  {
+    path: 'lista-clases-profesor',
+    loadChildren: () => import('./pages/lista-clases-profesor/lista-clases-profesor.module').then( m => m.ListaClasesProfesorPageModule)
   },
+
 
 ];
 

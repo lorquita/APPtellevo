@@ -1,0 +1,26 @@
+.data-table {
+  width: 100%;
+  overflow: auto;
+}
+
+.mat-column-Id {
+  width: 32px;
+  border-right: 1px solid currentColor;
+  padding-right: 24px;
+  text-align: center;
+}
+
+.mat-column-asignatura {
+  padding-left: 16px;
+  font-size: 20px;
+}
+
+.mat-column-seccion {
+  font-style: italic;
+}
+
+.mat-column-sala {
+  width: 32px;
+  text-align: center;
+  font-weight: bold;
+}
