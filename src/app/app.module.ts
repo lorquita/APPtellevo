@@ -9,10 +9,11 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ComponentesModule } from './componentes/componentes.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserAnimationsModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule, ComponentesModule],
+  imports: [BrowserAnimationsModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule, ComponentesModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

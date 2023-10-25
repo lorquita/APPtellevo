@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
+import { ServicioService } from 'src/app/servicios/servicio.service';
 
 export interface ListadoClases {
   Id: number;
@@ -7,29 +9,21 @@ export interface ListadoClases {
   sala: string;
 }
 
-const ELEMENT_DATA: ListadoClases[] = [
-  {Id: 1, asignatura: 'Programacion BD',seccion: '011D', sala: 'LC-12'},
-  {Id: 2, asignatura: 'Programacion Movil', seccion: '007D', sala: 'LC-14'},
-  {Id: 3, asignatura: 'Algoritmos', seccion: '021D', sala: 'TR-21'},
-  {Id: 4, asignatura: 'Consulta BD', seccion: '0923D', sala: 'EEEEEEE-2'},
-  {Id: 5, asignatura: 'Principios de Fe Cristiana', seccion: 'D10S', sala: 'PA-523'},
-  {Id: 6, asignatura: 'Ingles', seccion: '010D', sala: 'LSD-020'},
-  {Id: 7, asignatura: 'Portafolio', seccion: '003D', sala: 'CR-7'},
-];
-
-
 @Component({
   selector: 'app-tabla-clases',
   templateUrl: './tabla-clases.component.html',
   styleUrls: ['./tabla-clases.component.scss'],
 })
-export class TablaClasesComponent  implements OnInit {
+export class TablaClasesComponent    {
 
-  displayedColumns: string[] = ['Id', 'asignatura', 'seccion', 'sala', 'iniciar-clase'];
-  dataSource = ELEMENT_DATA;
+  listaClases !: ListadoClases[];
+  dataSource : any;
+  displayedColumns:string[]=["Id", "asignatura", "seccion", "sala","iniciar-clase"];
 
-  constructor() { }
-
-  ngOnInit() {}
-
+  constructor(private service : ServicioService) { 
+    this.service.getClases().subscribe(res=>{
+      this.listaClases = res;
+      this.dataSource = new MatTableDataSource<ListadoClases>(this.listaClases);
+    })
+  }
 }
