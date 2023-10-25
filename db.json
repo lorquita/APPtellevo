@@ -1,0 +1,20 @@
+{
+    "alumnos": [
+        {
+            "rut": "1111111111-1",
+            "nombre": "AAAAAAA",
+            "apellido": "BBBBBBB",
+            "carrera": "CCCCCC",
+            "porcentaje": 45
+        }
+    ],
+
+    "clases":[
+        {
+            "Id": 1,
+            "asignatura": "GGGGGG",
+            "seccion": "HHHHHHHH",
+            "sala": "JJJJJJJ"
+        }
+    ]
+}
