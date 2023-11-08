@@ -2,11 +2,18 @@
   <app-cabecera></app-cabecera>
 </ion-header>
 <ion-content [fullscreen]="true" class="fondo">
-  <div style="margin: 60px;">
-    <img src="../../../assets/img/QR.png" alt="">
+  <br>
+  <br>
+  <br>
+  <div class="centrar">
+    <h1 class="letras-negras">¡Escanea el codigo QR y confirma tu asistencia!</h1>
+    <br>
+    <img src="../../../assets/img/QR.png" alt="Codigo QR para asistencia">
   </div>
   <div class="boton">
-    <ion-button fill="clear" (click)="irConfirmarAsistencia()">Confirmar Asistencia Temporal</ion-button>
+    <br>
+    <br>
+    <ion-button id="alerta" (click)="irConfirmarAsistencia()" class="">Confirmar Asistencia Temporal</ion-button>
   </div>
 </ion-content>
 <ion-footer>
