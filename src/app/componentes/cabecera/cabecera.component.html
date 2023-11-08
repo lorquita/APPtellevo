@@ -1,8 +1,8 @@
-<mat-toolbar color="primary" class="mat-elevation-z6">
+<mat-toolbar class="mat-elevation-z6">
   <button (click)="sidenav.toggle()" mat-icon-button>
-    <mat-icon>menu</mat-icon>
+    <mat-icon class="blanco">menu</mat-icon>
   </button>
-  <span>RegistrAPP</span>
+  <span class="blanco">RegistrAPP</span>
   <span class="espacio-toolbar"></span>
 </mat-toolbar>
 
@@ -13,9 +13,31 @@
       <mat-list-item>
         <button mat-button><mat-icon>account_circle</mat-icon>Perfil</button>
       </mat-list-item>
+
+      <mat-list-item>
+        <button mat-button><mat-icon ><ion-icon name="qr-code-outline"></ion-icon></mat-icon>Escanear QR</button>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button mat-button><mat-icon><ion-icon name="calendar-outline"></ion-icon></mat-icon>Horario</button>
+      </mat-list-item>
+
+      <mat-list-item>
+        <button mat-button><mat-icon><ion-icon name="checkmark-circle-outline"></ion-icon></mat-icon>Asistencias</button>
+      </mat-list-item>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
     </mat-nav-list>
     <div class="flex-container">
-      <button mat-raised-button color="warn" routerLink="/inicio-sesion" (click)="sidenav.close()"  >Cerrar Sesion</button>
+      <button mat-raised-button color="warn" routerLink="/inicio-sesion" (click)="sidenav.close()">Cerrar Sesion</button>
     </div>
   </mat-sidenav>
   <mat-sidenav-content>
