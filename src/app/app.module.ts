@@ -9,8 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ComponentesModule } from './componentes/componentes.module';
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSidenavModule} from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [AppComponent],
