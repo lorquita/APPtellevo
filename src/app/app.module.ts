@@ -9,11 +9,20 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ComponentesModule } from './componentes/componentes.module';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserAnimationsModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule, ComponentesModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  imports: [BrowserAnimationsModule, 
+            BrowserModule, 
+            IonicModule.forRoot(), 
+            AppRoutingModule, 
+            ComponentesModule, 
+            MatSidenavModule,
+            FormsModule],
+  providers: [{ provide: RouteReuseStrategy, 
+                useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
