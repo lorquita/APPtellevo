@@ -1,3 +1,22 @@
-.fondo{
+.fondo {
     --background: url(../../../assets/img/descarga.png) 0/100% 100%;
+}
+
+.centrar-formulario {
+    text-align: center;
+    align-content: center;
+    margin-top: 200px;
+    background-color: #d3d3d3;
+}
+
+.input {
+    background-color: #d3d3d3;
+    margin: 15px;
+    display: flex;
+    border-color: black;
+}
+
+.label-input{
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: center; color: black;
 }
