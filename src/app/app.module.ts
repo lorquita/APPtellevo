@@ -11,7 +11,6 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ComponentesModule } from './componentes/componentes.module';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms';
-import { BarcodeScanner } from '@awesome-cordova-plugins/barcode-scanner/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,8 +20,7 @@ import { BarcodeScanner } from '@awesome-cordova-plugins/barcode-scanner/ngx';
             AppRoutingModule, 
             ComponentesModule, 
             MatSidenavModule,
-            FormsModule,
-            BarcodeScanner],
+            FormsModule],
   providers: [{ provide: RouteReuseStrategy, 
                 useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
