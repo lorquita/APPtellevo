@@ -9,12 +9,22 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ComponentesModule } from './componentes/componentes.module';
-import { HttpClientModule } from '@angular/common/http';
+import { MatSidenavModule} from '@angular/material/sidenav';
+import { FormsModule } from '@angular/forms';
+import { BarcodeScanner } from '@awesome-cordova-plugins/barcode-scanner/ngx';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserAnimationsModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule, ComponentesModule, HttpClientModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  imports: [BrowserAnimationsModule, 
+            BrowserModule, 
+            IonicModule.forRoot(), 
+            AppRoutingModule, 
+            ComponentesModule, 
+            MatSidenavModule,
+            FormsModule,
+            BarcodeScanner],
+  providers: [{ provide: RouteReuseStrategy, 
+                useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

@@ -20,11 +20,8 @@ export class InicioSesionPage implements OnInit {
 
   async irHome() {
     if (this.usuario=="admin" && this.password=="1234") {
-      this.router.navigate(['/menu-profe']);
-  }else if(this.usuario=='Juan' && this.password=='4321'){
-    this.router.navigate(['/home']);
-  }
-  else{
+      this.router.navigate(['/home']);
+  }else{
     let t=this.toastCtrl.create({
       message:"usuario o password incorrecto",
       duration:3000,

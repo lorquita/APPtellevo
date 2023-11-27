@@ -5,18 +5,29 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import { PieComponent } from './pie/pie.component';
 import { IonicModule } from '@ionic/angular';
 import { ModuleModule } from '../modulos/module/module.module';
-import { TablaClasesComponent } from './tabla-clases/tabla-clases.component';
-import { TablaAlumnosComponent } from './tabla-alumnos/tabla-alumnos.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import { RouterModule, Routes } from "@angular/router";
 
 @NgModule({
   declarations: [
-    CabeceraComponent, PieComponent, TablaClasesComponent, TablaAlumnosComponent
+    CabeceraComponent, PieComponent
   ],
   imports: [
     CommonModule,
     IonicModule,
-    ModuleModule
+    ModuleModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatButtonModule, 
+    MatDividerModule,
+    RouterModule,
+    
   ],
-  exports:[ CabeceraComponent, PieComponent, TablaClasesComponent, TablaAlumnosComponent]
+  exports:[ CabeceraComponent, PieComponent]
 })
 export class ComponentesModule { }

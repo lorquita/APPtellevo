@@ -39,19 +39,6 @@ const routes: Routes = [
     path: 'confirmar-asistencia',
     loadChildren: () => import('./pages/confirmar-asistencia/confirmar-asistencia.module').then( m => m.ConfirmarAsistenciaPageModule)
   },
-  {
-    path: 'menu-profe',
-    loadChildren: () => import('./pages/menu-profe/menu-profe.module').then( m => m.MenuProfePageModule)
-  },  {
-    path: 'lista-clases-profesor',
-    loadChildren: () => import('./pages/lista-clases-profesor/lista-clases-profesor.module').then( m => m.ListaClasesProfesorPageModule)
-  },
-  {
-    path: 'lista-alumnos',
-    loadChildren: () => import('./pages/lista-alumnos/lista-alumnos.module').then( m => m.ListaAlumnosPageModule)
-  },
-
-
 ];
 
 @NgModule({
@@ -61,3 +48,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export class cabecera { }

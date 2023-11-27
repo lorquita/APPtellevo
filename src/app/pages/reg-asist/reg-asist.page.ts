@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { BarcodeScanner } from '@awesome-cordova-plugins/barcode-scanner/ngx';
 
 @Component({
   selector: 'app-reg-asist',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class RegAsistPage implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, barcodeScanner: BarcodeScanner) { }
 
   ngOnInit() {
   }
