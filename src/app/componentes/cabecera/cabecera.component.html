@@ -34,15 +34,14 @@
 <br>
 <br>
 <br>
-<br>
     </mat-nav-list>
     <div class="flex-container">
-      <button mat-raised-button color="warn" routerLink="/inicio-sesion" (click)="sidenav.close()">Cerrar Sesion</button>
+      <button mat-raised-button color="warn" routerLink="/inicio-sesion" (click)="close()">Cerrar Sesion</button>
     </div>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <div [ngStyle]="{ 'margin-left.em': sidenavWidth - 4 }">
-      <router-outlet></router-outlet>
-    </div>
-  </mat-sidenav-content>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div [ngStyle]="{ 'margin-left.em': sidenavWidth - 4 }">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
 </mat-sidenav-container>
