@@ -28,10 +28,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/reg-asist/reg-asist.module').then( m => m.RegAsistPageModule)
   },
   {
-    path: 'ver-horario',
-    loadChildren: () => import('./pages/ver-horario/ver-horario.module').then( m => m.VerHorarioPageModule)
-  },
-  {
     path: 'ver-asistencia',
     loadChildren: () => import('./pages/ver-asistencia/ver-asistencia.module').then( m => m.VerAsistenciaPageModule)
   },
