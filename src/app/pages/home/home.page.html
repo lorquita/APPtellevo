@@ -1,57 +1,17 @@
 <ion-header>
-  <app-cabecera></app-cabecera>
+  <app-cabecera titulo ="Home"></app-cabecera>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="fondo">
-
-
-
-  <ion-card color="medium" class="centrar-boton card">
-    <ion-card-header>
-      <ion-card-title class="letras-negras">Registrar asistencia</ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content class="letras-negras">
-      Registra tu asistencia escaneando el QR generado por tu profesor
-    </ion-card-content>
-
-    <ion-button fill="clear" (click)="irReg()" class="fondo-boton">Registrar Asistencia</ion-button>
-    <br>
-    <br>
-  </ion-card>
-
-  <br>
-
-  <ion-card color="medium" class="centrar-boton card">
-    <ion-card-header>
-      <ion-card-title class="letras-negras">Asistencias</ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content class="letras-negras">
-      Ve tus asistencias a clases
-    </ion-card-content>
-
-    <ion-button fill="clear" (click)="irVerAsistencia()" class="fondo-boton">Ver Asistencia</ion-button>
-    <br>
-    <br>
-  </ion-card>
-  <br>
-  <ion-card class="centrar-boton card">
-
-    <ion-card-header>
-      <ion-card-title class="letras-negras">Horario</ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content class="letras-negras">
-      ¡Aquí podras ver tu horario!
-    </ion-card-content>
-
-    <ion-button fill="clear" (click)="irVerHorario()" class="fondo-boton">Ver Horario</ion-button>
-    <br>
-    <br>
-  </ion-card>
-  <br>
-  <br>
+  <div style="background-color: rgb(231, 235, 37); text-align: center; margin: 50px;">
+    <ion-button fill="clear" (click)="irReg()">Registrar Asistencia</ion-button>
+  </div>
+  <div style="background-color: rgb(231, 235, 37); text-align: center; margin: 50px;">
+    <ion-button fill="clear" (click)="irVerAsistencia()">Ver Asistencia</ion-button>
+  </div>
+  <div style="background-color: rgb(231, 235, 37); text-align: center; margin: 50px;">
+    <ion-button fill="clear" (click)="irVerHorario()">Ver Horario</ion-button>
+  </div>
 </ion-content>
 <ion-footer>
   <app-pie></app-pie>

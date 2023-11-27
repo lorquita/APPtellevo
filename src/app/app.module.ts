@@ -12,7 +12,6 @@ import { ComponentesModule } from './componentes/componentes.module';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms';
 
-
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserAnimationsModule, 
