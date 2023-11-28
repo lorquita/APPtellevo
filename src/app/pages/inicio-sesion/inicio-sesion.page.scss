@@ -1,54 +1,17 @@
-.titulo {
+.titulo{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-  
-  }
-  
-  .fondo {
-    --background: url(../../../assets/img/descarga.png) 100% 100%;
-  
-  }
-  
-  .boton {
+    
+}
+.fondo{
+    --background: url(../../../assets/img/descarga.png) 0/100% 100%;
+}
+.boton{
     text-align: center;
-  }
-  
-  .icono {
+}
+.icono{
     width: 40px;
     border: solid 1px black;
     border-radius: 50%;
     margin: 10px;
-  }
-  
-  .placeHolder {
-    background-color: white;
-    color: black;
-  
-  }
-  
-  .centrar-formulario {
-    text-align: center;
-    align-content: center;
-    margin-top: 140px;
-  }
-  
-  .btn-ingresar {
-    background-color: rgb(255, 184, 0);
-  }
-  
-  .fondo-formulario {
-    background-color: #d3d3d3;
-  }
-  
-  
-  .logo-registrapp {
-    align-content: center;
-    background-color: #012C56;
-  
-  }
-  
-  .texto-inicio-sesion {
-    align-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-  }
+}
