@@ -1,20 +1,18 @@
 <ion-header>
   <app-cabecera></app-cabecera>
 </ion-header>
-<ion-content [fullscreen]="true" class="fondo">
-  <br>
-  <br>
-  <br>
-  <div class="centrar">
-    <h1 class="letras-negras">¡Escanea el codigo QR y confirma tu asistencia!</h1>
-    <br>
-    <img src="../../../assets/img/QR.png" alt="Codigo QR para asistencia">
-  </div>
-  <div class="boton">
-    <br>
-    <br>
-    <ion-button id="alerta" (click)="irConfirmarAsistencia()" class="">Confirmar Asistencia Temporal</ion-button>
-  </div>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let barcode of barcodes">
+      <ion-label position="stacked">{{ barcode.format }}</ion-label>
+      <ion-input type="text" [value]="barcode.rawValue"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="scan()" [disabled]="!isSupported">
+      <ion-icon name="scan"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
 <ion-footer>
   <app-pie></app-pie>
