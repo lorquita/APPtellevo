@@ -37,8 +37,8 @@ export class RegAsistPage implements OnInit {
 
   async presentAlert(): Promise<void> {
     const alert = await this.alertController.create({
-      header: 'Permission denied',
-      message: 'Please grant camera permission to use the barcode scanner.',
+      header: 'Permiso Denegado',
+      message: 'Porfavor, acepte los permisos de camara para usar el QR Scanner.',
       buttons: ['OK'],
     });
     await alert.present();
