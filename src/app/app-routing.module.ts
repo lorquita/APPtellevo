@@ -34,7 +34,11 @@ const routes: Routes = [
   {
     path: 'confirmar-asistencia',
     loadChildren: () => import('./pages/confirmar-asistencia/confirmar-asistencia.module').then( m => m.ConfirmarAsistenciaPageModule)
+  },  {
+    path: 'horario-alumno',
+    loadChildren: () => import('./pages/horario-alumno/horario-alumno.module').then( m => m.HorarioAlumnoPageModule)
   },
+
 ];
 
 @NgModule({

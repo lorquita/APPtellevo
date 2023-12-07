@@ -1,0 +1,41 @@
+<!-- horario-alumno.page.html -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Horario Alumno
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="Lunes">
+      Lunes
+    </ion-segment-button>
+    <ion-segment-button value="Martes">
+      Martes
+    </ion-segment-button>
+    <ion-segment-button value="Miércoles">
+      Miércoles
+    </ion-segment-button>
+    <ion-segment-button value="Jueves">
+      Jueves
+    </ion-segment-button>
+    <ion-segment-button value="Viernes">
+      Viernes
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-list>
+    <ion-card *ngFor="let asignatura of asignaturasPorDia">
+      <ion-card-header>
+        {{ asignatura.nombre }}
+      </ion-card-header>
+      <ion-card-content>
+        Día: {{ asignatura.dias.join(', ') }} <br>
+        Hora: {{ asignatura.horaInicio }} - {{ asignatura.horaFin }}
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>
