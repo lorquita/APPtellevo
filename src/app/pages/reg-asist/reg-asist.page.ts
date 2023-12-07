@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Barcode, BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
-import { AlertController } from '@ionic/angular';
+import { AlertController, NavController } from '@ionic/angular';
 import { Browser } from '@capacitor/browser';
 
 @Component({
@@ -13,7 +13,7 @@ export class RegAsistPage implements OnInit {
   isSupported = false;
   barcodes: Barcode[] = [];
 
-  constructor(private alertController: AlertController) { }
+  constructor(private alertController: AlertController, private navCtrl: NavController) { }
 
   ngOnInit() {
     BarcodeScanner.isSupported().then((result) => {
@@ -23,17 +23,20 @@ export class RegAsistPage implements OnInit {
 
   async scan(): Promise<void> {
     const granted = await this.requestPermissions();
-
+  
     if (!granted) {
       this.presentPermissionDeniedAlert();
       return;
     }
-
+  
     const { barcodes } = await BarcodeScanner.scan();
     this.barcodes = barcodes;
-
+  
     this.processQrCodeContent();
+
+    this.navCtrl.navigateForward('/confirmar-asistencia.html');
   }
+
 
   async requestPermissions(): Promise<boolean> {
     const { camera } = await BarcodeScanner.requestPermissions();
