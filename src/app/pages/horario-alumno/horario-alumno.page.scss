@@ -1,0 +1,16 @@
+ion-card {
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  ion-card-header {
+    background-color: #3498db; /* Azul */
+    color: #ffffff; /* Blanco */
+    border-radius: 10px 10px 0 0;
+  }
+
+  ion-card-content {
+    background-color: #ffffff; /* Blanco */
+    border-radius: 0 0 10px 10px;
+  }
+}

@@ -16,8 +16,8 @@ export class HomePage implements OnInit{
   irReg(){
     this.router.navigate(['/reg-asist'])
   }
-  irVerHorario(){
-    this.router.navigate(['/ver-horario'])
+  irHorarioAlumno(){
+    this.router.navigate(['/horario-alumno'])
   }
   irVerAsistencia(){
     this.router.navigate(['/ver-asistencia'])
